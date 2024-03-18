@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 5px solid black;
+            background-color: burlywood;
+            display: flex;
+            flex-direction: row;
+            width: 500px;
+            margin: 3px;
+            padding: 10px;
+        }
+        #boxl{
+            background-color: chocolate;
+            border: 3px solid black;
+            width: 45%;
+            margin: 3px;
+            padding: 3px;
+            display: flex;
+            flex-direction: column;
+        }
+        #boxr{
+            background-color: chartreuse;
+            border: 3px solid black;
+            width: 45%;
+            margin: 3px;
+            padding: 3px;
+        }
+        p{
+            border: 1px solid red;
+        }
+        img{
+            height: 150px;
+            width: 150px;
+        }
+        @media (max-width:640px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="boxl">
+            <p>text1</p>
+            <p>text2</p>
+        </div>
+        <div id="boxr">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ficreatie.in%2Fshop%2Fcreatie-quixotic-rose-vintage-printed-bookmark%2F&psig=AOvVaw1Fjjk1G9dJkcs9nUOHdj0b&ust=1690882127531000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOD2ivbQuIADFQAAAAAdAAAAABAE"/>
+        </div>
+    </div>
+</body>
+</html>

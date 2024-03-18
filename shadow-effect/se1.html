@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:black;
+            --custom-width:330px;
+        }
+        .container{
+            background-color: burlywood;
+            border: 5px solid black;
+            height: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            --primary-color:black;
+            --custom-width:330px;
+            background-color: crimson;
+            border: 3px solid var(--primary-color);
+            height: 330px;
+            width: var(--custom-width);
+            margin: 5px;
+            padding: 5px;
+            box-shadow: 20px 20px 3px 1px black ,20px 20px 5px 4px orangered ;
+        }
+        img{
+            height: 100px;
+            width: 150px;
+        }
+        #head1{
+            text-shadow: 2px 2px 2px wheat, 5px 5px 3px green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="bookmarks.jpg" />
+            <h2 id="head1">WELCOME</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing distinctio aspernatur aliquid quisquam odio hic ut architecto asperiores odit, magni iusto eligendi in vitae dolorem ullam, quaerat molestiae nemo cupiditate. Nam hic voluptatem minima omnis asperiores incidunt nemo quo esse? Vitae suscipit, asperiores quos enim quas quae veritatis ipsam temporibus aperiam, voluptas labore.</p>
+        </div>
+    </div>
+</body>
+</html>

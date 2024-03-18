@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+    background: #e65c00;  
+    background: -webkit-linear-gradient(to bottom, #F9D423, #e65c00);  
+    background: linear-gradient(to bottom, #F9D423, #e65c00); 
+;
+}
+.navigation{
+    width: 100vw;
+    /*background-color: rgb(108, 1, 1);*/
+    background: #EB5757;  
+    background: -webkit-linear-gradient(to right, #000000, #EB5757);  
+    background: linear-gradient(to right, #000000, #EB5757); 
+
+    min-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+nav{
+    width: 100%;
+    overflow-x: none;
+}
+#navList{
+    width: 100%;
+    padding: 10px;
+    /*margin-left: 10px;
+    margin-right: 20px;*/
+    list-style: none;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navlogo{
+    font-size: 2rem;
+    color: rgb(254, 254, 254);
+}
+#navItems{
+    display: flex;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+}
+.contentbox{
+    width: 60%;
+    margin: auto;
+    padding: 3rem;
+    /*border: 3px solid black;*/
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    box-shadow: 3px 3px 30px black;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#leftitem{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#leftitem h2{
+    font-size: 2.5rem;
+}
+#leftitem h3{
+    font-size: 1.8rem;
+}
+#ingbox{
+    font-size: 1.2rem;
+}
+#recipebox{
+    font-size: 1.2rem;
+}
+#rightitem{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+}
+#rightitem img{
+    width: 270px;
+    height: 350px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: all 1s linear 0s;
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+#rightitem:hover{
+    transform: scale(1.1);
+}
+#rightitem #overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 350px;
+    background-color: rgba(36, 34, 34, 0.793);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+#rightitem:hover #overlay{
+    opacity: 1;
+}
+#rightitem #overlay span{
+    font-size: 2rem;
+    color: bisque;
+}
+.footerbox{
+    background: #EB5757;  
+    background: -webkit-linear-gradient(to right, #000000, #EB5757);  
+    background: linear-gradient(to right, #000000, #EB5757); 
+    width: 100vw;
+    color: azure;
+    text-align: center;
+    min-height: 20px;
+}
